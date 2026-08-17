@@ -27,7 +27,8 @@ img{max-width:100%;display:block}
 button{font-family:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-  /* ---------- Latar berlapis ---------- */
+
+/* ---------- Latar berlapis ---------- */
 .bgfx{position:fixed;inset:0;z-index:-2;pointer-events:none}
 .bgfx svg{width:100%;height:100%}
 .grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
@@ -68,7 +69,8 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .specs div{display:flex;flex-direction:column;gap:1px}
 .specs small{font-size:9.5px;letter-spacing:2px;color:var(--ink2)}
 .specs b{font-size:14px;font-weight:600;color:var(--deep)}
-  /* ---------- Panel umum ---------- */
+
+/* ---------- Panel umum ---------- */
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:4px;box-shadow:0 1px 0 rgba(51,38,26,.05)}
 .panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11px;letter-spacing:2.2px;color:var(--ink2)}
 .chip{font-family:var(--mono);font-size:9.5px;letter-spacing:1.4px;padding:4px 9px;border:1px solid var(--line2);border-radius:2px;color:var(--ink2);background:var(--bg2);transition:all .3s;white-space:nowrap}
@@ -79,7 +81,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 /* ---------- Ruang kerja ---------- */
 .workspace{display:grid;grid-template-columns:minmax(0,10fr) minmax(0,11fr);gap:22px;margin-top:38px}
 .frame{position:relative;margin:16px;overflow:hidden;border-radius:3px}
-  .dropzone{min-height:392px;border:1.5px dashed var(--line2);border-radius:3px;display:grid;place-content:center;justify-items:center;gap:9px;text-align:center;padding:34px 22px;cursor:pointer;background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);transition:border-color .25s,background .25s,transform .25s}
+.dropzone{min-height:392px;border:1.5px dashed var(--line2);border-radius:3px;display:grid;place-content:center;justify-items:center;gap:9px;text-align:center;padding:34px 22px;cursor:pointer;background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);transition:border-color .25s,background .25s,transform .25s}
 .dropzone:hover,.dropzone.drag{border-color:var(--accent);background:#F2E5CD}
 .dropzone.drag{transform:scale(1.006)}
 .dropzone svg{width:46px;height:46px;color:var(--deep);opacity:.85}
@@ -120,7 +122,8 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .row dd{font-family:var(--mono);font-size:12.5px;text-align:right;overflow-wrap:anywhere;color:var(--ink)}
 @keyframes rowin{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
 .notice{margin-top:16px;font-size:12px;color:var(--warn);border:1px solid rgba(176,122,46,.4);background:rgba(176,122,46,.08);padding:10px 14px;border-radius:3px}
-  /* ---------- Lokasi ---------- */
+
+/* ---------- Lokasi ---------- */
 .location{margin-top:26px}
 .loc-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px}
 .map{height:400px;position:relative;background:var(--panel2)}
@@ -139,7 +142,8 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .loc-btns{display:flex;flex-direction:column;gap:9px;margin-top:auto}
 .loc-btns .btn{justify-content:center}
 .map-fallback{display:grid;place-items:center;height:100%;padding:30px;text-align:center;color:var(--ink2);font-size:12.5px}
-  /* ---------- Riwayat ---------- */
+
+/* ---------- Riwayat ---------- */
 .history{margin-top:26px}
 .hist-body{padding:16px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .hchip{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:6px 12px 6px 6px;cursor:pointer;transition:border-color .2s,transform .2s}
@@ -152,12 +156,12 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 footer{margin-top:64px;border-top:1px solid var(--line);background:var(--bg2)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px;font-family:var(--mono);font-size:10.5px;letter-spacing:1.4px;color:var(--ink2)}
 footer b{color:var(--deep)}
-
-/* ---------- Toast ---------- */
+  /* ---------- Toast ---------- */
 .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);background:var(--deep);color:var(--cream);font-family:var(--mono);font-size:11.5px;letter-spacing:.6px;padding:11px 20px;border-radius:3px;opacity:0;pointer-events:none;transition:all .3s;z-index:99;box-shadow:0 10px 24px -10px rgba(43,33,21,.6);max-width:90vw;text-align:center}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .toast.err{background:var(--err)}
-  /* ---------- Reveal ---------- */
+
+/* ---------- Reveal ---------- */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 
@@ -223,6 +227,7 @@ footer b{color:var(--deep)}
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track" id="tickerTrack"></div>
 </div>
+
 <main class="wrap">
   <!-- Intro -->
   <section class="intro reveal">
@@ -237,6 +242,7 @@ footer b{color:var(--deep)}
       <div><small>CAKUPAN TAG</small><b>60+</b></div>
     </div>
   </section>
+
   <!-- Ruang kerja -->
   <section class="workspace reveal" id="alat">
     <!-- Pratinjau -->
@@ -287,6 +293,7 @@ footer b{color:var(--deep)}
       </div>
     </div>
   </section>
+
   <!-- Riwayat -->
   <section class="history reveal" id="histSec" hidden>
     <div class="panel">
@@ -324,7 +331,8 @@ function toDMS(v,isLat){const a=Math.abs(v),d=Math.floor(a),mf=(a-d)*60,m=Math.f
   const dir=isLat?(v>=0?"LU":"LS"):(v>=0?"BT":"BB");return d+"\u00B0 "+m+"' "+s.toFixed(1)+'" '+dir}
 let toastT;function toast(msg,err){const t=$("#toast");t.textContent=msg;t.className="toast show"+(err?" err":"");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2600)}
 function setStatus(mode,text){$("#statusPill").dataset.mode=mode;$("#statusText").textContent=text}
-  /* ================= Jam & ticker ================= */
+
+/* ================= Jam & ticker ================= */
 function tick(){try{$("#clock").textContent=new Date().toLocaleTimeString("id-ID",{hour12:false,timeZone:"Asia/Jakarta"}).replaceAll(".",":")+" WIB"}catch(e){}}
 setInterval(tick,1000);tick();$("#year").textContent=new Date().getFullYear();
 const TICKS=["ISO 200","f/2.8","1/250 s","FOKUS 35 mm","GPS \u22126.2088 / 106.8456","METERING MULTI-SEGMEN","LENSA 24-70 mm","KILAT NON-AKTIF","DATUM WGS-84","EXIF 2.32","RANA 1/160","PUTIH OTOMATIS"];
@@ -334,7 +342,8 @@ $("#tickerTrack").innerHTML+=$("#tickerTrack").innerHTML;
 /* ================= Reveal gulir ================= */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-  /* ================= Parser EXIF ================= */
+
+/* ================= Parser EXIF ================= */
 const IFD0_MAP={0x010F:"Make",0x0110:"Model",0x0112:"Orientation",0x011A:"XResolution",0x011B:"YResolution",0x0128:"ResolutionUnit",0x0131:"Software",0x0132:"DateTime",0x8298:"Copyright"};
 const EXIF_MAP={0x829A:"ExposureTime",0x829D:"FNumber",0x8822:"ExposureProgram",0x8827:"ISOSpeedRatings",0x9000:"ExifVersion",0x9003:"DateTimeOriginal",0x9004:"DateTimeDigitized",0x9204:"ExposureBiasValue",0x9207:"MeteringMode",0x9209:"Flash",0x920A:"FocalLength",0xA001:"ColorSpace",0xA002:"PixelXDimension",0xA003:"PixelYDimension",0xA403:"WhiteBalance",0xA405:"FocalLengthIn35mmFilm",0xA430:"CameraOwnerName",0xA431:"BodySerialNumber",0xA433:"LensMake",0xA434:"LensModel"};
 function parseExif(buf){
@@ -378,7 +387,7 @@ function parseExif(buf){
     }catch(e){}
     return null;
   }
-    function readIFD(o){
+  function readIFD(o){
     const out={};
     try{
       const n=r16(o);
@@ -393,18 +402,24 @@ function parseExif(buf){
   if(ifd0[0x8825])res.gpsRaw=readIFD(ifd0[0x8825]);
   return res;
 }
-function gpsDec(vals,ref){if(!Array.isArray(vals)||vals.length<3)return null;
+function ratOk(v){return Array.isArray(v)&&v.length===2&&v[1]>0&&isFinite(v[0]/v[1])}
+function gpsDec(vals,ref){
+  if(!Array.isArray(vals)||vals.length<3)return null;
+  if(!vals.every(ratOk))return null;
   const d=num(vals[0])+num(vals[1])/60+num(vals[2])/3600;
-  if(!isFinite(d))return null;return(ref==="S"||ref==="W")?-d:d}
-  function buildGPS(g){
+  if(!isFinite(d))return null;
+  return(ref==="S"||ref==="W")?-d:d;
+}
+function buildGPS(g){
   if(!g)return null;
   const lat=gpsDec(g[0x0002],g[0x0001]),lng=gpsDec(g[0x0004],g[0x0003]);
   if(lat==null||lng==null)return null;
+  if(lat===0&&lng===0)return null;
   const o={lat,lng};
-  if(g[0x0006]!=null)o.alt=num(g[0x0006])*(g[0x0005]===1?-1:1);
-  if(g[0x0011]!=null)o.dir=num(g[0x0011]);
+  if(g[0x0006]!=null&&ratOk(g[0x0006]))o.alt=num(g[0x0006])*(g[0x0005]===1?-1:1);
+  if(g[0x0011]!=null&&ratOk(g[0x0011]))o.dir=num(g[0x0011]);
   if(g[0x0012])o.datum=g[0x0012];
-  if(g[0x0007]&&g[0x001D])o.utc={d:g[0x001D],h:num(g[0x0007][0]),m:num(g[0x0007][1]),s:num(g[0x0007][2])};
+  if(g[0x0007]&&g[0x001D]&&Array.isArray(g[0x0007])&&g[0x0007].every(ratOk))o.utc={d:g[0x001D],h:num(g[0x0007][0]),m:num(g[0x0007][1]),s:num(g[0x0007][2])};
   return o;
 }
 
@@ -429,7 +444,8 @@ document.addEventListener("paste",e=>{
     if(it.type.startsWith("image/")){handleFile(it.getAsFile());return}
   }
 });
-  async function handleFile(file){
+
+async function handleFile(file){
   if(!file||!file.type.startsWith("image/")){toast("Berkas bukan gambar.",true);return}
   if(file.size>30*1048576){toast("Ukuran melebihi 30 MB.",true);return}
   setStatus("scan","MEMINDAI");
@@ -440,12 +456,14 @@ document.addEventListener("paste",e=>{
     const [buf,url]=await Promise.all([file.arrayBuffer(),readDataURL(file)]);
     const dims=await probeImage(url);
     const exif=parseExif(buf);
+    const gps=exif?buildGPS(exif.gpsRaw):null;
     const report={
       file:{name:file.name,type:file.type,size:file.size,width:dims.w,height:dims.h,lastModified:file.lastModified},
       tags:exif?exif.tags:{},
       isJpeg:/jpe?g$/i.test(file.type),
       exifFound:!!exif,
-      gps:exif?buildGPS(exif.gpsRaw):null
+      gpsEmpty:!!(exif&&exif.gpsRaw&&exif.gpsRaw[0x0002]!=null)&&!gps,
+      gps:gps
     };
     const wait=Math.max(0,750-(performance.now()-t0));
     if(wait)await new Promise(r=>setTimeout(r,wait));
@@ -457,7 +475,7 @@ document.addEventListener("paste",e=>{
     $("#btnExport").disabled=false;$("#btnReset").disabled=false;
     $("#viewChip").textContent="AKTIF";$("#viewChip").className="chip ok";
     setStatus("done",report.gps?"SELESAI \u00B7 GPS TERKUNCI":"SELESAI");
-    toast(report.gps?"Metadata & koordinat GPS ditemukan.":"Metadata berhasil diekstrak.");
+    toast(report.gps?"Metadata & koordinat GPS ditemukan.":(report.gpsEmpty?"Metadata diekstrak, tetapi GPS tidak valid.":"Metadata berhasil diekstrak."));
   }catch(err){
     setStatus("err","GAGAL");$("#viewChip").textContent="GAGAL";$("#viewChip").className="chip err";
     toast("Berkas tidak dapat diproses.",true);
@@ -465,13 +483,14 @@ document.addEventListener("paste",e=>{
     $("#panelView").classList.remove("scanning");
   }
 }
-function readDataURL(f){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(f)})}
+  function readDataURL(f){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(f)})}
 function probeImage(url){return new Promise(res=>{const im=new Image();im.onload=()=>res({w:im.naturalWidth,h:im.naturalHeight});im.onerror=()=>res({w:0,h:0});im.src=url})}
 function showPreview(url,file){
   $("#stageImg").src=url;stage.classList.add("on");dz.style.display="none";
   $("#stageMeta").textContent=file.name+" \u00B7 "+fmtSize(file.size);
 }
-  /* ================= Render metadata ================= */
+
+/* ================= Render metadata ================= */
 function buildGroups(rep){
   const t=rep.tags||{},f=rep.file;
   const iso=Array.isArray(t.ISOSpeedRatings)?t.ISOSpeedRatings.join(" / "):(t.ISOSpeedRatings!=null?String(t.ISOSpeedRatings):null);
@@ -519,19 +538,24 @@ function buildGroups(rep){
     html+="</dl></div>";
   }
   let notice="";
-  if(!rep.exifFound)notice=rep.isJpeg
+  if(rep.gpsEmpty)notice+='<div class="notice">Tag GPS terdeteksi tetapi bernilai nol/kosong (0,0). Lokasi dianggap tidak valid dan tidak dipetakan.</div>';
+  if(!rep.exifFound)notice+=rep.isJpeg
     ?'<div class="notice">EXIF tertanam tidak ditemukan pada berkas ini. Kemungkinan metadata telah dihapus saat ekspor.</div>'
     :'<div class="notice">Ekstraksi EXIF penuh didukung untuk format JPEG. Informasi dasar berkas tetap ditampilkan.</div>';
   body.innerHTML=(html||"")+notice;
   $("#metaCount").textContent=count+" BIDANG";
   state.metaRows=groups;
-  }
-  /* ================= Lokasi & peta ================= */
+}
+
+/* ================= Lokasi & peta ================= */
 function renderLocation(rep){
   const chip=$("#gpsChip"),body=$("#locBody"),g=rep.gps;
   if(!g){
     chip.textContent="TIDAK ADA";chip.className="chip err";
-    body.innerHTML='<div class="empty" style="margin:16px;min-height:220px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11Z"/><path d="M4 4l16 16"/></svg><p>Metadata GPS tidak ditemukan pada berkas ini.</p></div>';
+    const msg=rep.gpsEmpty
+      ?"Tag GPS ditemukan namun bernilai nol/kosong (0,0) — lokasi tidak valid."
+      :"Metadata GPS tidak ditemukan pada berkas ini.";
+    body.innerHTML='<div class="empty" style="margin:16px;min-height:220px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11Z"/><path d="M4 4l16 16"/></svg><p>'+esc(msg)+"</p></div>";
     return;
   }
   chip.textContent="TERKUNCI";chip.className="chip ok";
@@ -554,18 +578,18 @@ function renderLocation(rep){
   initMap(g.lat,g.lng);
   reverseGeocode(g.lat,g.lng);
 }
-function pad(n){return String(Math.floor(n)).padStart(2,"0")}
+  function pad(n){return String(Math.floor(n)).padStart(2,"0")}
 function copyText(t){
   if(navigator.clipboard){navigator.clipboard.writeText(t).then(()=>toast("Koordinat disalin: "+t)).catch(()=>fallbackCopy(t))}
   else fallbackCopy(t);
 }
 function fallbackCopy(t){const ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Koordinat disalin: "+t)}catch(e){toast("Gagal menyalin.",true)}ta.remove()}
-  function initMap(lat,lng){
+function initMap(lat,lng){
   const el=$("#mapEl");
   if(!window.L){el.innerHTML='<div class="map-fallback">Peta interaktif tidak tersedia saat luring.<br>Gunakan tombol Google Maps di samping.</div>';return}
   if(!state.map){
     state.map=L.map("mapEl",{scrollWheelZoom:false});
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"\u00A9 OpenStreetMap"}).addTo(state.map);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"\u00A9 OpenStreetMap"}).addTo(state.map);
     L.control.scale({imperial:false,position:"bottomleft"}).addTo(state.map);
   }
   if(state.marker)state.marker.remove();
@@ -598,7 +622,7 @@ function pushHistory(rep,url){
   if(state.history.length>4)state.history.pop();
   renderHistory();
 }
-function renderHistory(){
+  function renderHistory(){
   const sec=$("#histSec"),body=$("#histBody");
   if(!state.history.length){sec.hidden=true;return}
   sec.hidden=false;
@@ -613,7 +637,8 @@ function renderHistory(){
   }));
 }
 $("#btnHistClear").addEventListener("click",()=>{state.history=[];renderHistory();toast("Riwayat sesi dihapus.")});
-  /* ================= Bersihkan & ekspor ================= */
+
+/* ================= Bersihkan & ekspor ================= */
 $("#btnReset").addEventListener("click",()=>{
   state.report=null;$("#stageImg").removeAttribute("src");stage.classList.remove("on");dz.style.display="";
   $("#metaBody").innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/><circle cx="12" cy="12" r="1.6"/></svg><p>Belum ada data. Unggah gambar untuk memulai pemeriksaan.</p></div>';
